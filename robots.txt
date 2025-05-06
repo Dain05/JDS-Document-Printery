@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://dain05.github.io/jds-document-printery/sitemap.xml
+
