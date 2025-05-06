@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | JDS Document Centre</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <img src="Image/JDS Logo.jpg" alt="JDS Logo" style="height: 40px; margin-right: 10px;">
+        JDS Document Centre
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="container py-5 animate__animated animate__fadeIn">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <p class="text-center">
+      <strong>Email:</strong> <a href="mailto:info@jdsdocumentcentre.com">info@jdsdocumentcentre.com</a><br>
+      <strong>Phone:</strong> <a href="tel:+18761234567">+1 (876) 123-4567</a>
+    </p>
+
+    <form class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message / Comment</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+      <!-- Message Display -->
+      <div id="form-message" class="mt-3 text-success fw-bold"></div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-4 mt-auto">
+    <div class="container">
+      <div class="mb-2">
+        <a href="https://facebook.com" target="_blank" class="text-white me-3" title="Facebook">
+          <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="text-white me-3" title="Instagram">
+          <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+        </a>
+        <a href="https://wa.me/18761234567" target="_blank" class="text-white" title="WhatsApp">
+          <i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i>
+        </a>
+      </div>
+      &copy; 2025 JDS Document Centre. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelector("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("form-message").textContent = "Thank you! Your message has been received.";
+    });
+  </script>
+</body>
+</html>
